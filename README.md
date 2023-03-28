@@ -3,9 +3,29 @@
 ### Задание 1
 
 1. Используя директорию [help](./help) внутри этого домашнего задания, запустите связку prometheus-grafana.
-1. Зайдите в веб-интерфейс grafana, используя авторизационные данные, указанные в манифесте docker-compose.
-1. Подключите поднятый вами prometheus, как источник данных.
-1. Решение домашнего задания — скриншот веб-интерфейса grafana со списком подключенных Datasource.
+2. Зайдите в веб-интерфейс grafana, используя авторизационные данные, указанные в манифесте docker-compose.
+3. Подключите поднятый вами prometheus, как источник данных.
+4. Решение домашнего задания — скриншот веб-интерфейса grafana со списком подключенных Datasource.
+
+# Ответ
+
+1. Развертывание на ВМ в YandexCloud
+![1 create VM](https://user-images.githubusercontent.com/109212419/228349839-045ebe9f-b6eb-4e38-b498-6815d9f8fa1a.jpg)
+
+![1 deploy docker into VM](https://user-images.githubusercontent.com/109212419/228349869-d81f9400-dd06-42ca-862e-75c6fe971e0d.jpg)
+
+2. Зайдите в веб-интерфейс grafana, используя авторизационные данные, указанные в манифесте docker-compose.
+
+![1-2 Grafana](https://user-images.githubusercontent.com/109212419/228350110-3ac52291-d540-4a6a-a5e9-5c61c566b545.jpg)
+
+3.Подключите поднятый вами prometheus, как источник данных.
+
+![1-3 add prometheus](https://user-images.githubusercontent.com/109212419/228359899-833d14ff-1d05-4c1f-97a9-296f281ff7d9.jpg)
+
+4.Решение домашнего задания — скриншот веб-интерфейса grafana со списком подключенных Datasource.
+
+![1-3 add prometheus -1](https://user-images.githubusercontent.com/109212419/228359974-db4c2e82-6f03-4fb9-b7ad-65de03cfb605.jpg)
+
 
 ## Задание 2
 
