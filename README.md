@@ -78,3 +78,7 @@ node_filesystem_free_bytes{device="/dev/vda2", fstype="ext4", instance="nodeexpo
 
 1. Сохраните ваш Dashboard.Для этого перейдите в настройки Dashboard, выберите в боковом меню «JSON MODEL». Далее скопируйте отображаемое json-содержимое в отдельный файл и сохраните его.
 1. В качестве решения задания приведите листинг этого файла.
+
+# Ответ
+
+![Dashboard.json](https://github.com/ALEMOLOKOV/10.2_Grafana_Aleksandr_Molokov/blob/115181ddf354977993f3eac7a70ef5a2efc3b2cd/dashboard.json)
