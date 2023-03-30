@@ -44,10 +44,35 @@
 
 Для решения этого задания приведите promql-запросы для выдачи этих метрик, а также скриншот получившейся Dashboard.
 
+# Ответ
+
+
+
+promql-запросы
+
+- утилизация CPU для nodeexporter (в процентах, 100-idle);
+rate(node_cpu_seconds_total[5m])
+
+- CPULA 1/5/15;
+node_load1{instance="nodeexporter:9100", job="nodeexporter"}
+node_load5{instance="nodeexporter:9100", job="nodeexporter"}
+node_load15{instance="nodeexporter:9100", job="nodeexporter"}
+
+- количество свободной оперативной памяти;
+node_memory_MemFree_bytes{instance="nodeexporter:9100", job="nodeexporter"}
+
+- количество места на файловой системе.
+node_filesystem_free_bytes{device="/dev/vda2", fstype="ext4", instance="nodeexporter:9100", job="nodeexporter", mountpoint="/"}
+
 ## Задание 3
 
 1. Создайте для каждой Dashboard подходящее правило alert — можно обратиться к первой лекции в блоке «Мониторинг».
 1. В качестве решения задания приведите скриншот вашей итоговой Dashboard.
+
+# Ответ
+
+![3 allert](https://user-images.githubusercontent.com/109212419/228965252-79b065d7-7902-4488-b39e-7d73a7adc224.jpg)
+
 
 ## Задание 4
 
