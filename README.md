@@ -51,17 +51,23 @@
 promql-запросы
 
 - утилизация CPU для nodeexporter (в процентах, 100-idle);
+
 rate(node_cpu_seconds_total[5m])
 
 - CPULA 1/5/15;
+
 node_load1{instance="nodeexporter:9100", job="nodeexporter"}
+
 node_load5{instance="nodeexporter:9100", job="nodeexporter"}
+
 node_load15{instance="nodeexporter:9100", job="nodeexporter"}
 
 - количество свободной оперативной памяти;
+
 node_memory_MemFree_bytes{instance="nodeexporter:9100", job="nodeexporter"}
 
 - количество места на файловой системе.
+
 node_filesystem_free_bytes{device="/dev/vda2", fstype="ext4", instance="nodeexporter:9100", job="nodeexporter", mountpoint="/"}
 
 ## Задание 3
